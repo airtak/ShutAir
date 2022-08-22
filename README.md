@@ -15,6 +15,7 @@ Run this code  in your **Terminal** for downloading **&** starting:
 ```
 $ git clone https://github.com/airtak/ShutAir.git
 $ cd ShutAir
+$ chmod u+x bash/bash.sh
 $ python3 shudown.py
 ```
 - Run program as ROOT !
