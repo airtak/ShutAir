@@ -43,7 +43,11 @@ for x in range (0,5):
     print (b, end="\r")
     time.sleep(0.5)
 
-
+os.system("chmod u+x "+j)
+os.system("chmod u+x "+ii)
+os.system("chmod u+x "+iii)
+os.system("chmod u+x "+iiii)
+os.system("chmod u+x "+iiiii)
 sub = subprocess.Popen(str(j), shell=True, stdout=subprocess.PIPE)
 subo = sub.stdout.read()
 out = str(subo.decode())
@@ -51,11 +55,6 @@ sub.kill()
 time.sleep(1.5)
 if out == "-----------------------\n":
   print(f"\n!----------{Style.RESET_ALL}You Are ROOT{Fore.GREEN}----------!{Style.RESET_ALL}"+u'\u2713')
-  os.system("chmod +x "+j)
-  os.system("chmod +x "+ii)
-  os.system("chmod +x "+iii)
-  os.system("chmod +x "+iiii)
-  os.system("chmod +x "+iiiii)
   time.sleep(2)
 else:
   print(f"\n{Style.RESET_ALL}!!You Are Not ROOT!!\n")
@@ -71,8 +70,6 @@ for i in range(101):
     progress(i)
     sleep(0.01)
 print(f"{Fore.RED}\n")
-
-
 
 
 #---------------------------------------------IFCONFIG---------------------------------------
@@ -120,8 +117,6 @@ mon="airmon-ng start "+str(o)
 os.system(mon)
 
 
-
-
 #---------------------------------------------AIRODUMP---------------------------------------
 #********************************************************************************************************
 print(f"{Fore.YELLOW}\n***WARNING!!")
@@ -145,7 +140,6 @@ time.sleep(1)
 ip=input(f"{Fore.YELLOW}Enter your Network BSSID address >{Fore.RED}")
 
 
-
 #---------------------------------------------RESTART---------------------------------------
 #********************************************************************************************************
 mon="airmon-ng stop "+str(o)+"mon"
@@ -153,7 +147,6 @@ os.system(mon)
 mon="airmon-ng start "+str(o)+" "+str(ch)
 os.system(mon)
 time.sleep(1.5)
-
 
 
 #---------------------------------------------AIREPLAY---------------------------------------
@@ -166,8 +159,3 @@ print(o)
 o9="aireplay-ng -0 0 -a "+ip+" "+str(o)+"mon"
 print(o9)
 os.system(o9)
-
-
- 
- 
-
