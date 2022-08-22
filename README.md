@@ -12,7 +12,7 @@ This tool is make an easy way for you to turn off **kick off** all connected dev
 - **AIRMON-AIRCONFIG-AIRODUMP-AIREPLAY**
 - **gnome-terminal**:
 ```
-sudo apt-get install gnome-terminal
+$ sudo apt-get install gnome-terminal
 ```
 # Usage
 Run this code  in your **Terminal** for downloading **&** starting:
