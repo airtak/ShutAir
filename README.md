@@ -23,3 +23,4 @@ $ python3 shudown.py
 ```
 - Run program as ROOT !
 - Write correct information !
+- Stop code by [CTRL+C]
